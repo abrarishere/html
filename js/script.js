@@ -24,3 +24,7 @@ for (let i = 0; i < totalNavList; i++) {
 
     })
 }
+function showSection(element) {
+    const target = element.getAttribute("href").split("#")[1];
+    document.querySelector("." + target).classList.add("active");
+}
