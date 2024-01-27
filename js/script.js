@@ -21,10 +21,9 @@ for (let i = 0; i < totalNavList; i++) {
         // }
         this.classList.add("active");
         showSection(this);
-
     })
 }
 function showSection(element) {
     const target = element.getAttribute("href").split("#")[1];
-    document.querySelector("." + target).classList.add("active");
+    document.querySelector("#" + target).classList.add("active");
 }
